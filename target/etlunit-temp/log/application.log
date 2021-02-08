@@ -1,0 +1,68 @@
+[14:29:19.INFO] Installing feature debug
+[14:29:19.INFO] Installing feature report
+[14:29:19.INFO] Installing feature test
+[14:29:19.INFO] Installing feature directory-based-class-locator
+[14:29:19.INFO] Installing feature context
+[14:29:19.INFO] Installing feature results
+[14:29:19.INFO] Installing feature console
+[14:29:19.INFO] Installing feature run-all-director
+[14:29:19.INFO] Installing feature surefire-reporter
+[14:29:19.INFO] Initializing feature: annotation-validator
+[14:29:19.INFO] Initializing feature: test
+[14:29:19.INFO] Initializing feature: logging
+[14:29:19.INFO] Initializing feature: debug
+[14:29:19.INFO] Initializing feature: report
+[14:29:19.INFO] Initializing feature: context
+[14:29:19.INFO] Initializing feature: results
+[14:29:19.INFO] Initializing feature: run-all-director
+[14:29:19.INFO] Initializing feature: directory-based-class-locator
+[14:29:19.INFO] Initializing feature: console
+[14:29:19.INFO] Console Status Reporter online
+[14:29:19.INFO] Initializing feature: surefire-reporter
+[14:29:19.DBUG] Installed modules
+[14:29:19.DBUG] -------------------------------
+[14:29:19.DBUG] org.bitbucket.bradleysmithllc.etlunit.maven
+[14:29:19.DBUG] 1.8.6
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] true
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] 
+[14:29:19.DBUG] org.bitbucket.bradleysmithllc.etlunit.core
+[14:29:19.DBUG] 1.8.6
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] true
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] 
+[14:29:19.DBUG] -------------------------------
+[14:29:19.INFO] testsStarted(1)
+[14:29:19.INFO] scanStarted
+[14:29:19.DBUG] Installed modules
+[14:29:19.DBUG] -------------------------------
+[14:29:19.DBUG] org.bitbucket.bradleysmithllc.etlunit.maven
+[14:29:19.DBUG] 1.8.6
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] true
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] 
+[14:29:19.DBUG] org.bitbucket.bradleysmithllc.etlunit.core
+[14:29:19.DBUG] 1.8.6
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] true
+[14:29:19.DBUG] a157e64f24f1e4a4e8e4b70002a0e3c99b7b8c39
+[14:29:19.DBUG] 
+[14:29:19.DBUG] -------------------------------
+[14:29:19.INFO] testClassAccepted(super_test_class)
+[14:29:19.INFO] testMethodAccepted(runSomethingMeaningful)
+[14:29:19.INFO] scanCompleted
+[14:29:19.INFO] testsCompleted()
+[14:29:19.INFO] Disposing feature: annotation-validator
+[14:29:19.INFO] Disposing feature: test
+[14:29:19.INFO] Disposing feature: logging
+[14:29:19.INFO] Disposing feature: debug
+[14:29:19.INFO] Disposing feature: report
+[14:29:19.INFO] Disposing feature: context
+[14:29:19.INFO] Disposing feature: results
+[14:29:19.INFO] Disposing feature: run-all-director
+[14:29:19.INFO] Disposing feature: directory-based-class-locator
+[14:29:19.INFO] Disposing feature: console
+[14:29:19.INFO] Disposing feature: surefire-reporter

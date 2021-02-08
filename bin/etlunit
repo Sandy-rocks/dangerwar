@@ -1,0 +1,19 @@
+#!/bin/sh
+
+pushd ..
+
+if [ ! -f target/cli.flag ]
+then
+	mkdir lib
+
+	rm lib/*
+
+	cp target/etlunit-lib/* lib
+
+	echo UPDATE > target/cli.flag
+fi
+
+
+java -Djava.ext.dirs=lib org.bitbucket.bradleysmithllc.etlunit.cli.CliMain
+
+popd

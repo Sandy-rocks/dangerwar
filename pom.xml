@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>danger</groupId>
+	<artifactId>fear</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>fear</name>
+	<url>http://danger</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<etlunit.project.version>1.8.6</etlunit.project.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>distrib-snapshots</id>
+			<name>Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.bitbucket.bradleysmithllc.etlunit</groupId>
+			<artifactId>core</artifactId>
+			<version>${etlunit.project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bitbucket.bradleysmithllc.etlunit</groupId>
+			<artifactId>cli</artifactId>
+			<version>${etlunit.project.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.bitbucket.bradleysmithllc.etlunit</groupId>
+				<artifactId>maven</artifactId>
+				<version>${etlunit.project.version}</version>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/etlunit-lib</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+					<execution>
+						<id>unpack-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.bitbucket.bradleysmithllc.etlunit</groupId>
+									<artifactId>cli</artifactId>
+									<type>tar.gz</type>
+									<version>${etlunit.project.version}</version>
+									<overWrite>false</overWrite>
+									<classifier>bin</classifier>
+									<outputDirectory>${basedir}</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pushd ..
+
+rm target/etlunit-lib/*
+
+mvn package -Dmaven.test.skip -U
+
+rm target/cli.flag
+
+popd

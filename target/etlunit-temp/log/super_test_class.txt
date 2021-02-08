@@ -1,0 +1,2 @@
+[14:29:19.INFO.super_test_class] Begin processing test class 2021-02-08 14:29:19
+[14:29:19.INFO.super_test_class] testCompleted(super_test_class.runSomethingMeaningful, error=null, failures=[], warnings[])
